@@ -1,7 +1,7 @@
-* {
+*{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -11,7 +11,7 @@
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .col-1 {
@@ -29,6 +29,7 @@
 .col-4 {
     width: calc(100% / 12 * 4);
 }
+
 .col-5 {
     width: calc(100% / 12 * 4);
 }
@@ -59,41 +60,40 @@
 .box {
     font-size: 25px;
     border: 2px solid black;
+    overflow: hidden;
 }
 
 
-
 @media screen and (max-width: 1200px) {
-    .col-sm-12 {
+    .col-1{
         width: calc(100% / 12);
     }
-} 
+}
+
 
 @media screen and (max-width: 1000px) {
-    .col-md-6 {
+    .col-md-6{
         width: calc(100% / 12 * 2);
+        background-color: red;
+        color: white;
     }
 } 
+
+
 @media screen and (max-width: 700px) {
     .col-md-3 {
         width: calc(100% / 12 * 4);
+        background-color: teal;
+        color: tomato;
     }
 } 
+
 
 @media screen and (max-width: 500px) {
-    .col-1 {
-        width:100%
+    .col-md-1{
+        width:100%;
+        background-color: yellowgreen;
+        color: blue;
+        
     }
 } 
-
-
-/* 
-    when writing media queries with max
-    width you should use max width from top with
-    greater values to bottom lesser values 
-*/
-
-/* 500px ve ashaghisi */
-/* 500px ve 900px arasi */
-/* 900px ve 1200px arasi */
-/* 1200px uzu yuxari */
